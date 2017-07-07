@@ -1,4 +1,4 @@
-# Command Line Today List
+# Command Line Todo List
 
 A small node todo-list that runs from the command line.
 
