@@ -14,9 +14,9 @@ switch (command) {
     done(argument)
     break
   case 'list':
-    console.log(command)
+    list()
     break
   default:
-    console.log('There was no vaild command')
+    console.log('Please enter a vaild command')
     break
 }
