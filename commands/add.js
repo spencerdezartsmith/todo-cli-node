@@ -1,7 +1,7 @@
 const fs = require('fs')
 const taskPath = __dirname + '/../task.json'
 
-module.exports = function(description) {
+module.exports = (description) => {
   fs.readFile(taskPath, 'utf8', (error, json) => {
     if (error) throw error
     let data = JSON.parse(json)
@@ -18,7 +18,7 @@ module.exports = function(description) {
 
     json = JSON.stringify(data)
 
-    fs.writeFile(taskPath, json, function(error) {
+    fs.writeFile(taskPath, json, (error) => {
       if (error) throw error
       console.log(`Created task ${newTaskID}`)
     })

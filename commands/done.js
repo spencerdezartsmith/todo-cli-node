@@ -14,10 +14,10 @@ module.exports = (id) => {
 
     fs.writeFile(taskPath, json, (err) => {
       if (error) {
-        throw error
+        console.log(`There was no task with the ID ${id}`)
       } else {
         console.log(`Completed the task ${task.description}`)
-      } 
+      }
     })
   })
 }
